@@ -10,7 +10,7 @@ class HotelsController < ApplicationController
       {
         lng: hotel.longitude,
         lat: hotel.latitude,
-        infoWindow: render_to_string(partial: "infowindow", locals: {hotel: hotel}),
+        infoWindow: render_to_string(partial: "window", locals: {hotel: hotel}),
         image_url: helpers.asset_url('booking-logo.jpg')
       }
     end
